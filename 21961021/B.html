@@ -1,0 +1,296 @@
+<!DOCTYPE html><!--21961021_김유진-->
+<html>
+    <head>
+        <title>layout2</title>
+        <meta charset="utf-8" />
+        <style>
+
+
+            body{
+                margin: 0px;
+
+            }
+
+
+            header{
+                background-color: #3ecdff;
+                color: white;
+                padding: 10px 50px; /* 상하좌우 */
+            }
+            header>h1{
+                margin: 0px;
+            }
+            header>h1>span:nth-child(1){
+                color: white;
+            }
+            header>h1>span:nth-child(2){
+                color: pink;
+            }
+            header>nav li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px; /* 상하 좌우 */
+            }
+            header ul{
+                margin: 12px 0px;
+            }
+            .clear{
+                clear: both; /* 지우다: 양쪽*/
+                height: 0px; /* 높이: 0px*/
+                overflow: hidden; /* 넘쳤을때 : 숨김 */
+            }
+            .float_left{
+                float: left;
+            }
+            .float_right{
+                float: right;
+            }
+            #main_visual{
+                background-image: url("./image/main.jpg");
+                height: 400px;
+                background-size: auto 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                /* repeat, no-repeat, repeat-x, repeat-y */
+                background-color: black;
+                background-position: 50% 50%; /* 가로 세로 */
+
+                color: #ffff00; /* 상속 */
+                text-align: center;
+                padding: 100px 0px; /* 상하좌우 */
+            }
+            #main_visual h2{
+                letter-spacing: 15px;
+                font-size: 35px;
+                margin: 10px 0px; /* 상하좌우 값 따로 */
+            }
+            #tittle_top{
+                font-size: 20px;
+
+
+            }
+            #tittle_bottom{
+                font-size: 15px;
+            }
+            #main_visual img{
+                margin-top: 120px;
+
+            }
+            section{
+                text-align: center;
+
+
+            }
+            section h3{
+                color: #3ecdff;
+                font-size: 40px;
+                font-weight: normal;
+                font-weight: bold;
+            }
+            section p{
+                margin: 50px 100px;
+            }
+            section>#about_list>li{
+                float: left;
+                width: 200px;
+                width: calc(25% - (1px / 4 * 3) - 30px - 30px);
+
+                list-style: none;
+                border-right: solid 1px gray;
+                padding: 30px;
+            }
+            section #about_list{
+                padding: 0px;
+                margin: 0px 50px;
+            }
+            section dd{
+                margin: 0px;
+            }
+            section>#about_list>li:nth-child(4){
+                border: none;
+            }
+            #work_list>li{
+                float:left;
+                list-style: none;
+                width: 25%;
+            }
+            #work_list img{
+                width: 100%; /* 있을 수 있는 공간 100% 기준 */
+                display: inline; /* 원래 이미지의 출력방식 */
+                display: block; /* 블록형으로 변경 */
+            }
+            #work_list{
+                padding: 0px;
+                margin: 0px;
+            }
+            #wrap{
+                min-width: 1000px;
+                max-width: 1920px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            footer{
+              height: 200px;
+              margin-top:20px;
+            }
+
+            footer #footer_menu_box{
+              height: 40px;
+              background-color: #3ecdff;
+            }
+
+            footer #footer_menu{
+              width: 990px;
+              margin: 0 auto;
+              padding-top: 15px;
+            }
+
+            footer #footer_menu ul{
+            margin-left: 210px;
+            }
+
+            footer #footer_menu li{
+              display: inline;
+            margin-left: 20px;
+            }
+
+            footer #footer_menu a:link{
+              color:#ffffff;
+            }
+
+            footer #footer_menu a:hover{
+              color:#ffffff;
+            }
+
+            footer #footer_menu a:visited{
+              color:#ffffff;
+            }
+
+            footer #footer_menu a:active{
+              color:#ffffff;
+            }
+
+            footer #footer_box {
+            width: 990px;
+            margin: auto;
+            }
+
+            footer #footer_box div{
+            float:left;
+            }
+
+            footer #footer_box #footer_logo{
+            margin:50px 0 0 30px;
+            }
+
+            footer #footer_box #address{
+            margin:25px 0 0 10px;
+            }
+
+            footer #footer_box #footer_banner{
+            margin:50px 0 0 70px;
+            }
+
+
+
+            #me h3 {
+              color: #3ecdff;
+              font-size: 25px;
+              font-weight: bold;
+
+            }
+            #me h1{
+              color: #000000;
+              font-size: 12px;
+              color: gray;
+
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1 class="float_left">
+                    <!-- div span -->
+                    <a id = "logo" href="index.html"><img src="./image/logo.png"></a>
+                </h1>
+                <nav class="float_right">
+                    <ul>
+                      <li><a href="index.html">About me</a></li>
+                      <li><a href="A.html">work</a></li>
+                      <li><a href="B.html">Contact</a></li>
+
+                        <div class="clear"></div>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </header>
+            <div id="main_visual">
+                <div id="tittle_top">Web Standard Publishing</div>
+                <h2>Yujin's Portfolio Web Site</h2>
+                <div id="tittle_bottom">21961021 KimYuJin</div>
+
+
+                </div>
+<br><br><br><br>
+            <section>
+                <h3>Contact</h3>
+                <p>
+                        <img src="./image/yj1.jpg">
+                </p>
+
+                <div id="me">
+                  <h3>도움이 필요 하신가요?</h3><br><br>
+                  <h1> 도움이 필요 하시다면, 위에 있는 이메일 및 번호로 연락 해주세요. </h1>
+                  <h1> 당신의 소중한 의견 하나하나가 저에겐 큰 힘이 됩니다.</h1> <br><br><br>
+
+                  <h3>당신의 소중한 의견 , 지금 남겨주세요 .</h3>
+                  <form>
+                  <textarea rows="30" cols="100"></textarea><br><br><br>
+                  <button type="submit">의견 보내기</button> <button type="reset">재입력</button>
+
+
+                </form>
+
+
+
+
+                </div>
+
+
+
+
+            </section><br><br><br>
+        </div>
+        <footer>
+
+
+
+        </div>
+        <footer>
+        <section id="footer_menu_box">
+        <nav id="footer_menu">
+        <ul>
+
+        </ul>
+        </nav>
+        </section>
+
+        <section id="footer_box">
+         <div id="footer_logo">
+           <img src="image/footer_logo.png">
+         </div>
+
+         <div id="address">
+           <img src="image/address.png">
+         </div>
+
+         <div id="footer_banner">
+           <img src="image/footer_banner_01.png">
+         </div>
+         </section>
+         </footer>
+    </body>
+</html>

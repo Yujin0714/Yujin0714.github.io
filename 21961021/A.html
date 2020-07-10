@@ -1,0 +1,298 @@
+<!DOCTYPE html><!--21961021_김유진-->
+<html>
+    <head>
+        <title>layout2</title>
+        <meta charset="utf-8" />
+        <style>
+
+
+            body{
+                margin: 0px;
+
+            }
+
+
+            header{
+                background-color: #3ecdff;
+                color: white;
+                padding: 10px 50px; /* 상하좌우 */
+            }
+            header>h1{
+                margin: 0px;
+            }
+            header>h1>span:nth-child(1){
+                color: white;
+            }
+            header>h1>span:nth-child(2){
+                color: pink;
+            }
+            header>nav li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px; /* 상하 좌우 */
+            }
+            header ul{
+                margin: 12px 0px;
+            }
+            .clear{
+                clear: both; /* 지우다: 양쪽*/
+                height: 0px; /* 높이: 0px*/
+                overflow: hidden; /* 넘쳤을때 : 숨김 */
+            }
+            .float_left{
+                float: left;
+            }
+            .float_right{
+                float: right;
+            }
+            #main_visual{
+                background-image: url("./image/main.jpg");
+                height: 400px;
+                background-size: auto 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                /* repeat, no-repeat, repeat-x, repeat-y */
+                background-color: black;
+                background-position: 50% 50%; /* 가로 세로 */
+
+                color: #ffff00; /* 상속 */
+                text-align: center;
+                padding: 100px 0px; /* 상하좌우 */
+            }
+            #main_visual h2{
+                letter-spacing: 15px;
+                font-size: 35px;
+                margin: 10px 0px; /* 상하좌우 값 따로 */
+            }
+            #tittle_top{
+                font-size: 20px;
+
+
+            }
+            #tittle_bottom{
+                font-size: 15px;
+            }
+            #main_visual img{
+                margin-top: 120px;
+
+            }
+            section{
+                text-align: center;
+
+
+            }
+            section h3{
+                color: #3ecdff;
+                font-size: 40px;
+                font-weight: normal;
+                font-weight: bold;
+            }
+            section p{
+                margin: 50px 100px;
+            }
+            section>#about_list>li{
+                float: left;
+                width: 200px;
+                width: calc(25% - (1px / 4 * 3) - 30px - 30px);
+
+                list-style: none;
+                border-right: solid 1px gray;
+                padding: 30px;
+            }
+            section #about_list{
+                padding: 0px;
+                margin: 0px 50px;
+            }
+            section dd{
+                margin: 0px;
+            }
+            section>#about_list>li:nth-child(4){
+                border: none;
+            }
+            #work_list>li{
+                float:left;
+                list-style: none;
+                width: 25%;
+            }
+            #work_list img{
+                width: 100%; /* 있을 수 있는 공간 100% 기준 */
+                display: inline; /* 원래 이미지의 출력방식 */
+                display: block; /* 블록형으로 변경 */
+            }
+            #work_list{
+                padding: 0px;
+                margin: 0px;
+            }
+            #wrap{
+                min-width: 1000px;
+                max-width: 1920px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            footer{
+              height: 200px;
+              margin-top:20px;
+            }
+
+            footer #footer_menu_box{
+              height: 40px;
+              background-color: #3ecdff;
+            }
+
+            footer #footer_menu{
+              width: 990px;
+              margin: 0 auto;
+              padding-top: 15px;
+            }
+
+            footer #footer_menu ul{
+            margin-left: 210px;
+            }
+
+            footer #footer_menu li{
+              display: inline;
+            margin-left: 20px;
+            }
+
+            footer #footer_menu a:link{
+              color:#ffffff;
+            }
+
+            footer #footer_menu a:hover{
+              color:#ffffff;
+            }
+
+            footer #footer_menu a:visited{
+              color:#ffffff;
+            }
+
+            footer #footer_menu a:active{
+              color:#ffffff;
+            }
+
+            footer #footer_box {
+            width: 990px;
+            margin: auto;
+            }
+
+            footer #footer_box div{
+            float:left;
+            }
+
+            footer #footer_box #footer_logo{
+            margin:50px 0 0 30px;
+            }
+
+            footer #footer_box #address{
+            margin:25px 0 0 10px;
+            }
+
+            footer #footer_box #footer_banner{
+            margin:50px 0 0 70px;
+            }
+
+
+
+            #me h3 {
+              color: #3ecdff;
+              font-size: 25px;
+              font-weight: bold;
+
+            }
+            #me h1{
+              color: #000000;
+              font-size: 12px;
+              color: gray;
+
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1 class="float_left">
+                    <!-- div span -->
+                    <a id = "logo" href="index.html"><img src="./image/logo.png"></a>
+                </h1>
+                <nav class="float_right">
+                    <ul>
+                      <li><a href="index.html">About me</a></li>
+                      <li><a href="A.html">work</a></li>
+                      <li><a href="B.html">Contact</a></li>
+
+                        <div class="clear"></div>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </header>
+            <div id="main_visual">
+                <div id="tittle_top">Web Standard Publishing</div>
+                <h2>Yujin's Portfolio Web Site</h2>
+                <div id="tittle_bottom">21961021 KimYuJin</div>
+
+
+                </div>
+<br><br><br><br>
+            <section>
+                <h3>WORK</h3>
+                <p>
+                <a href="index_21961021.html"><img src="./image/A1.jpg"></a>
+                </p>
+
+                <div id="me">
+                  <h3>WEBSITE</h3>
+                  <h1>웹표준퍼블리싱</h1>
+                  <h1>지그재그 쇼핑몰 웹 페이지 제작</h1> <br><br><br><br>
+
+
+                  <a href="file:///C:/Users/%EC%B4%88%EB%A1%9D%EB%A7%88%EB%85%80/Desktop/21961021_%EA%B8%B0%EB%A7%90_%EA%B9%80%EC%9C%A0%EC%A7%84/%EA%B9%80%EC%9C%A0%EC%A7%84_%EC%A0%95%EC%A7%80%EC%9A%B0_%EA%B8%B0%EB%A7%90%ED%8F%89%EA%B0%80_%EB%B0%9C%ED%91%9C%EC%9A%A9.pdf"><img src="./image/A2.jpg"></a>
+
+
+                  <h3>PLANNING 01 </h3><br>
+                  <h1>프로젝트 기획 수업 중 진행한 새로운 애플리케이션 기획 프로젝트 입니다.</h1>
+                  <h1>혼자 여행하는 사람들을 위한 혼행족 전용 맞춤 앱 서비스를 주제로 기획을 진행 하였습니다.</h1> <br><br><br><br>
+
+                  <a href="file:///C:/Users/%EC%B4%88%EB%A1%9D%EB%A7%88%EB%85%80/Desktop/21961021_%EA%B8%B0%EB%A7%90_%EA%B9%80%EC%9C%A0%EC%A7%84/%EB%AF%B8%EB%94%94%EC%96%B4%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9D%B4%ED%95%91.pdf"><img src="./image/A3.jpg"></a>
+                  <h3>PLANNING 02 </h3><br>
+                  <h1>미디어프로토타이핑 수업 중 진행한 애플리케이션 UI 리뉴얼 프로젝트 입니다.</h1>
+                  <h1>여성생리달력 애플리케이션 기능 중 , 게시판 기능의 현저히 낮은 접근성으로 인하여 프로젝트를 진행 했습니다.</h1><br>
+
+                </div>
+
+
+
+
+            </section><br><br><br>
+        </div>
+        <footer>
+
+
+
+        </div>
+        <footer>
+        <section id="footer_menu_box">
+        <nav id="footer_menu">
+        <ul>
+
+        </ul>
+        </nav>
+        </section>
+
+        <section id="footer_box">
+         <div id="footer_logo">
+           <img src="image/footer_logo.png">
+         </div>
+
+         <div id="address">
+           <img src="image/address.png">
+         </div>
+
+         <div id="footer_banner">
+           <img src="image/footer_banner_01.png">
+         </div>
+         </section>
+         </footer>
+    </body>
+</html>
